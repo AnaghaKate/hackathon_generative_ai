@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yeti Style</title>
+    <style>
+        body {
+            background-color: #f8a5c2;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .button-row .button {
+            background-color: #FFD700;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .image-grid .grid-item {
+            flex-basis: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .button-row-blue .button {
+            background-color: #4169E1;
+            color: #FFF;
+        }
+
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .video-grid .grid-item {
+            flex-basis: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .video-grid .grid-item video {
+            width: 100%;
+            height: auto;
+        }
+
+        .logo {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+
+        .row-spacing {
+            margin-bottom: 20px;
+        }
+
+        .right-half {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .right-half video {
+            width: 50%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Yeti Style</h1>
+
+    <div class="container">
+        <div class="text-field-row row-spacing">
+            <button class="text-button">Generate Theme</button>
+            <input type="text" class="text-field" placeholder="Enter text">
+        </div>
+
+        <div class="button-row button-row-yellow">
+            <a href="#" class="button">Winter </a>
+            <a href="#" class="button">Spring </a>
+            <a href="#" class="button">Summer </a>
+            <a href="#" class="button">Fall </a>
+        </div>
+
+        <div class="image-grid row-spacing">
+            <div class="grid-item">
+                <img src="http://file:/Users/akate/Desktop/Yosemite_1.jpg" width="200" height="200">
+            </div>
+            <div class="grid-item">
+                <img src="http://file:/Users/akate/Desktop/Yosemite_2.jpg" width="200" height="200">
+            </div>
+            <div class="grid-item">
+                <img src="http://file:/Users/akate/Desktop/Yosemite_3.jpg" width="200" height="200">
+            </div>
+            <!-- Add more grid items as needed -->
+        </div>
+
+        <div class="text-field-row row-spacing">
+            <button class="text-button">Generate Animtaion</button>
+            <input type="text" class="text-field" placeholder="Enter text">
+        </div>
+
+        <div class="button-row button-row-blue">
+            <a href="#" class="button">Dab </a>
+            <a href="#" class="button">Hello </a>
+            <a href="#" class="button">Random </a>
+            <a href="#" class="button">Blue Button 4</a>
+        </div>
+
+        <div class="video-grid row-spacing">
+            <div class="grid-item">
+                <video src="video1.mp4" autoplay loop muted></video>
+            </div>
+            <div class="grid-item">
+                <video src="video2.mp4" autoplay loop muted></video>
+            </div>
+            <div class="grid-item">
+                <video src="video3.mp4" autoplay loop muted></video>
+            </div>
+            <!-- Add more grid items as needed -->
+        </div>
+
+        <div class="text-field-row row-spacing">
+            <button class="text-button">Generate Audio</button>
+            <input type="text" class="text-field" placeholder="Enter text">
+        </div>
+
+        <div class="right-half">
+            <video src="music_video.mp4" controls></video>
+        </div>
+
+        <img src="your_image.jpg" alt="Your Image" class="logo">
+    </div>
+
+    <!-- Rest of the page content -->
+
+</body>
+</html>
+
+
+
+
